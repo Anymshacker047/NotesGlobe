@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gesture Controlled NotesGlobe</title>
+  
+  <!-- Three.js and Globe.gl Dependencies -->
+  <script src="https://unpkg.com/three"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Globe Container -->
+  <div id="globeViz"></div>
+  
+  <!-- Overlay to show connection status -->
+  <div class="camera-container" id="statusContainer" style="display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.8);">
+    <div class="status-overlay" id="statusText" style="opacity: 1;">Connecting to Python Backend...</div>
+  </div>
+
+  <div class="instructions">
+    <h1>NotesGlobe</h1>
+    <p>✋ Move hand to Rotate | 🤏 Pinch to Zoom</p>
+  </div>
+
+  <!-- App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
